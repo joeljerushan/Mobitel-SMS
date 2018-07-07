@@ -38,21 +38,21 @@ class RegisterController extends Controller
 }
 ```
 
-### Send SMS
+### Sending SMS | Cool Part 
 
 ```php
-    //create object 
-    $sms = new MobitelSms(); 
+//create object 
+$sms = new MobitelSms(); 
 
-    //Make Session
-    $session = $sms->sessionMake(); 
+//Make Session
+$session = $sms->sessionMake(); 
 
-    //Make SMS and Send 
-    $send = $sms->fireSms($session, $Message, $phoneNumber);
+//Make SMS and Send 
+$send = $sms->fireSms($session, $Message, $phoneNumber);
 
-    //Get Delivery info 
-    $delivery = $sms->statusDelivery($session, 'YOUR MASK');
+//Get Delivery info 
+$delivery = $sms->statusDelivery($session, 'YOUR MASK');
 
-    //close session
-    $close = $sms->sessionClose($session);
+//close session
+$close = $sms->sessionClose($session);
 ```
