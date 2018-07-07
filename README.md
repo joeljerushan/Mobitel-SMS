@@ -1,7 +1,7 @@
 # Mobitel-SMS (MSMS) Library for Laravel
 Mobitel Sri Lanka's Messaging Solutions aka MSMS Library for Laravel
 
-![Mobitel Sri Lanka](https://upload.wikimedia.org/wikipedia/en/f/f8/Mobitel_logo.png "Mobitel Sri Lanka")
+![Web Design & Web Development Batticaloa Sri lanka](https://raw.githubusercontent.com/joeljerushan/Mobitel-SMS/master/ixeun_mobitel_msms.jpg "Web Design & Web Development Batticaloa Sri lanka")
 
 
 
@@ -10,5 +10,3 @@ This service provides any organization with a secure method of sending and recei
 
 ## For Laravel
 [iXeun Web Solution](https://www.ixeun.com/) made an easy Library for Laravel to send SMS using Messaging Solutions.  
-
-![iXeun Web & Software Solution Batticaloa](https://www.ixeun.com/wp-content/themes/ixeun_wp/img/logo.svg "iXeun Web & Software Solution Batticaloa")
