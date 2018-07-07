@@ -13,3 +13,8 @@ This service provides any organization with a secure method of sending and recei
 
 ### Warning ! - This is Library Not Composer Package 
 We will update this Library as Composer Package as soon as possible. this approach will be easy for using too :) - don't blame me for that :D :D 
+
+## Set-up
+### Create Library Folder in app/root (laravel app)
+
+`cd yourapp/app && mkdir Library`
