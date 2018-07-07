@@ -10,3 +10,6 @@ This service provides any organization with a secure method of sending and recei
 
 ## For Laravel
 [iXeun Web Solution](https://www.ixeun.com/) made an easy Library for Laravel to send SMS using Messaging Solutions.  
+
+### Warning ! - This is Library Not Composer Package 
+We will update this Library as Composer Package as soon as possible. this approach will be easy for using too :) - don't blame me for that :D :D 
