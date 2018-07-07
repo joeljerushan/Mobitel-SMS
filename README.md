@@ -47,10 +47,17 @@ $sms = new MobitelSms();
 //Make Session
 $session = $sms->sessionMake(); 
 
-//Make SMS and Send 
+//Make SMS and Send
+/*
+* @message - string 
+* @PhoneNumber - array / @string 
+*/
 $send = $sms->fireSms($session, $Message, $phoneNumber);
 
 //Get Delivery info 
+/*
+* $mask - string
+*/
 $delivery = $sms->statusDelivery($session, 'YOUR MASK');
 
 //close session
