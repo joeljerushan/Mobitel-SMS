@@ -23,7 +23,7 @@ We will update this Library as Composer Package as soon as possible. this approa
 
 `mv or copy MobitelSMS.php to Library`
 
-### Import MobitelSms to your Laravel Controller
+### Import MobitelSms Library to your Laravel Controller
 
 ```php
 //import our Library
@@ -31,23 +31,28 @@ use App\Library\MobitelSms;
 
 class RegisterController extends Controller
 {
-    //on your controller method 
+    //your controller method 
     protected function create(array $data) {
 
-        //create object 
-        $sms = new MobitelSms(); 
-
-        //Make Session
-        $session = $sms->sessionMake(); 
-
-        //Make SMS and Send 
-        $send = $sms->fireSms($session, $Message, $phoneNumber);
-
-        //Get Delivery info 
-        $delivery = $sms->statusDelivery($session, 'YOUR MASK');
-
-        //close session
-        $close = $sms->sessionClose($session);
     }
 }
+```
+
+### Send SMS
+
+```php
+    //create object 
+    $sms = new MobitelSms(); 
+
+    //Make Session
+    $session = $sms->sessionMake(); 
+
+    //Make SMS and Send 
+    $send = $sms->fireSms($session, $Message, $phoneNumber);
+
+    //Get Delivery info 
+    $delivery = $sms->statusDelivery($session, 'YOUR MASK');
+
+    //close session
+    $close = $sms->sessionClose($session);
 ```
