@@ -18,3 +18,4 @@ We will update this Library as Composer Package as soon as possible. this approa
 ### Create Library Folder in app/root (laravel app)
 
 `cd yourapp/app && mkdir Library`
+`mv or copy MobitelSMS.php to Library`
