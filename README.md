@@ -63,3 +63,43 @@ $delivery = $sms->statusDelivery($session, 'YOUR MASK');
 //close session
 $close = $sms->sessionClose($session);
 ```
+
+## For PHP - Mobitel Send SMS using PHP
+
+```php
+$number = isset($_GET['incoming_number']);
+$message = isset($_GET['incoming_message']);
+  
+//create a session with mobitel given username & password
+$session = createSession('','USERNAME','PASSWORD','');
+
+//send message with created session like this
+sendMessages($session, 'YOUR MASK', $message, array($number), 0);
+
+//close session & check your phone ;) 
+closeSession($session);
+```
+
+Refer This File for Full Code - https://github.com/joeljerushan/Mobitel-SMS/blob/master/pure.php
+
+### Example using Postman
+![Image shows example request using Postman](https://raw.githubusercontent.com/joeljerushan/Mobitel-SMS/master/postman_emaple_request.png)
+
+## Bonus
+```javascript
+let sms = 'Hello From Black Box Pvt Ltd.' 
+const params = 'http://localhost:8888/?incoming_number=94777878551&incoming_message=' + sms;
+axios({ 
+    method: 'post', 
+    url: params,
+    headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+    }
+}).then(function (response) {
+    //get status
+    console.log(response) 
+}).catch(function (error) {
+    //know what caused error 
+    console.log(error) 
+});
+```
