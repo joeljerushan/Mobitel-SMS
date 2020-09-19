@@ -1,6 +1,6 @@
 <?php 
-  $number = isset($_GET['jcu']);
-  $message = isset($_GET['message']);
+  $number = isset($_GET['incoming_number']);
+  $message = isset($_GET['incoming_message']);
 
   if ($number && $message) {
     //create a session with mobitel given username & password
